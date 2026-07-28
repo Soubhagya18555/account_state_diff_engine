@@ -1,5 +1,14 @@
 #!/usr/bin/env node
 
+export * from "./diff_engine.js";
+export * from "./html_report.js";
+export * from "./lamport_tracker.js";
+export * from "./report.js";
+export * from "./rpc_fetcher.js";
+export * from "./semantic_diff.js";
+export * from "./spl_token_diff.js";
+export type * from "./types.js";
+
 import { diffAccountSets } from "./diff_engine.js";
 import { fetchAccountSnapshots, resolveRpcUrl } from "./rpc_fetcher.js";
 import { formatHumanReport, formatJsonReport } from "./report.js";
